@@ -1,5 +1,5 @@
+import 'package:app_flutter_elden_ring_build/screens/create_build_screen.dart';
 import 'package:flutter/material.dart';
-import 'screens/status_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.grey),
         useMaterial3: true,
       ),
-      home: StatusScreen(),
+      home: CreateBuildScreen(),
     );
   }
 }
