@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch(backgroundColor: Colors.white),
         useMaterial3: true,
       ),
-      home: CreateBuildScreen(),
+      home: const CreateBuildScreen(),
     );
   }
 }
+///NOTE - criar botão de drop no character class

@@ -1,4 +1,5 @@
 import 'package:app_flutter_elden_ring_build/components/app_colors.dart';
+import 'package:app_flutter_elden_ring_build/screens/character_screen.dart';
 import 'package:flutter/material.dart';
 
 class CreateBuildScreen extends StatefulWidget {
@@ -12,15 +13,17 @@ class _CreateBuilScreenState extends State<CreateBuildScreen> {
   @override
   Widget build(BuildContext context) {
     return Form(
-      child: Scaffold(
-        appBar: AppBar(leading: Container(),
+      child: Scaffold(backgroundColor: AppColors.primaryColorBG,
+        appBar: AppBar(
+          leading: Container(),
           backgroundColor: AppColors.primaryColorBG,
           title: const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               //APPBAR TITULO
               Text(
-                'Build Editor',textAlign: TextAlign.center,
+                'Build Editor',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                     color: AppColors.fontColor,
                     fontSize: 18,
@@ -38,39 +41,64 @@ class _CreateBuilScreenState extends State<CreateBuildScreen> {
                 ))
           ],
         ),
-        body: Column(
+        body: ListView(
           children: [
-            Container(
-              height: 150,
-              width: 400,
-              decoration: BoxDecoration(
-                color: AppColors.primaryColorBG,
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  ClipRRect(
-                    child: ClipOval(
-                      child: Image.asset(
-                        'assets/images/meu_avatar.png',
-                        width: 100,
-                        height: 100,
-                        fit: BoxFit.cover,
+            ///!SECTION-CONTAINER FOTO E NOME DO PERSONAGEM
+            SingleChildScrollView(
+              child: Container(
+                width: 400,
+                height: 158,
+                decoration: const BoxDecoration(
+                  color: AppColors.primaryColorBG,
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        const SizedBox(
+                          width: 50,
+                        ),
+                        ClipOval(
+                          child: Image.asset(
+                            'assets/images/meu_avatar.png',
+                            width: 100,
+                            height: 100,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.edit,
+                            color: AppColors.fontColor,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      width: 200,
+                      child: Text(
+                        'Perfil Name',
+                        style: TextStyle(
+                          color: AppColors.fontColor,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
                     ),
-                  ),
-                  Container(
-                    width: 200,
-                    child: const Text(
-                      'Name Build',textAlign: TextAlign.center,
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(color: AppColors.fontColor,fontSize: 18,fontWeight: FontWeight.bold),
-                    ),
-                  )
-                ],
+                  ],
+                ),
               ),
-            )
+            ),
+        
+            ///!SECTION CONTAINER CHARACTER (NOME, LEVEL E CLASSE)
+            const CharacterScreen('characterName', 8),
           ],
         ),
       ),
