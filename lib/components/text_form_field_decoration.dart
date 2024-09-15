@@ -1,6 +1,7 @@
 import 'package:app_flutter_elden_ring_build/components/app_colors.dart';
 import 'package:flutter/material.dart';
 
+///NOTE - DECORAÇÃO DOS INPUTS CHARACTER NOME,LEVEL E CLASS
 InputDecoration getAuthenticationInputDecotation() {
   return InputDecoration(
     contentPadding: const EdgeInsets.fromLTRB(16, 8, 16, 8),

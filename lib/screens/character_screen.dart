@@ -1,3 +1,4 @@
+import 'package:app_flutter_elden_ring_build/components/drop_down_button_form_field.dart';
 import 'package:app_flutter_elden_ring_build/components/text_form_field_decoration.dart';
 import 'package:app_flutter_elden_ring_build/components/text_input_decoration.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +34,7 @@ class _CharacterScreenState extends State<CharacterScreen> {
         ),
         const Padding(
           padding: EdgeInsets.all(8.0),
-          child: TextOfInputDecoration(textName: 'Character Name'),
+          child: TextOfInputDecoration(textName: 'Character Level'),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
@@ -48,9 +49,7 @@ class _CharacterScreenState extends State<CharacterScreen> {
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: TextFormField(
-            decoration: getAuthenticationInputDecotation(),
-          ),
+          child: getDropdownButtonFormField(),
         )
       ],
     );

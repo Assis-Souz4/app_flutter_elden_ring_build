@@ -1,6 +1,7 @@
 import 'package:app_flutter_elden_ring_build/components/app_colors.dart';
 import 'package:flutter/material.dart';
 
+///NOTE - DECORAÇÃO DOS TEXTOS REFERENTES AOS INPUTS CHARACTER NOME,LEVEL E CLASS
 class TextOfInputDecoration extends StatelessWidget {
   const TextOfInputDecoration({required this.textName, super.key});
   //

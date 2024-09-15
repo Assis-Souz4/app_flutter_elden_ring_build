@@ -64,10 +64,10 @@ class _CreateBuilScreenState extends State<CreateBuildScreen> {
                         ),
                         ClipOval(
                           child: Image.asset(
-                            'assets/images/meu_avatar.png',
+                            'assets/images/image_character/hero_class.png',
                             width: 100,
                             height: 100,
-                            fit: BoxFit.cover,
+                            fit: BoxFit.contain,
                           ),
                         ),
                         IconButton(
