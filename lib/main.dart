@@ -1,4 +1,4 @@
-import 'package:app_flutter_elden_ring_build/screens/create_build_screen.dart';
+import 'package:app_flutter_elden_ring_build/screens/showBuildScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch(backgroundColor: Colors.white),
         useMaterial3: true,
       ),
-      home: const CreateBuildScreen(),
+      home: const ShowBuildScreen(),
     );
   }
 }
-///NOTE - criar botão de drop no character class
+///NOTE -
