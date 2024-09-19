@@ -1,4 +1,5 @@
 import 'package:app_flutter_elden_ring_build/components/app_bar_decoration.dart';
+import 'package:app_flutter_elden_ring_build/components/botton_navigator_bar.dart';
 import 'package:app_flutter_elden_ring_build/components/build.dart';
 import 'package:app_flutter_elden_ring_build/components/seach_build.dart';
 import 'package:flutter/material.dart';
@@ -47,18 +48,7 @@ class _ShowBuildsPageState extends State<HomePage> {
           )
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0,
-        items: const [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.home_outlined), label: 'Home'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.add_circle_outline), label: 'Create Build'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.settings_outlined), label: 'Settings'),
-        ],
-        onTap: (value) {},
-      ),
+      bottomNavigationBar: getBottonNavigatorBar(),
     );
   }
 }
