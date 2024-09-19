@@ -1,17 +1,17 @@
 import 'package:app_flutter_elden_ring_build/components/colors_app.dart';
 import 'package:flutter/material.dart';
 
-class ShowBuild extends StatefulWidget {
-  const ShowBuild({required this.nameBuild, super.key});
+class BuildCreate extends StatefulWidget {
+  const BuildCreate({required this.nameBuild, super.key});
   //
   final String nameBuild;
   // final String imageBuild;
   //
   @override
-  State<ShowBuild> createState() => _CreateBuildState();
+  State<BuildCreate> createState() => _CreateBuildState();
 }
 
-class _CreateBuildState extends State<ShowBuild> {
+class _CreateBuildState extends State<BuildCreate> {
   //
   int levelBuild = 150;
   //

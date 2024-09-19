@@ -31,14 +31,14 @@ class _ShowBuildsPageState extends State<HomePage> {
           Expanded(
             child: ListView(
               children: [
-                ShowBuild(nameBuild: ''),
-                ShowBuild(nameBuild: ''),
-                ShowBuild(nameBuild: ''),
-                ShowBuild(nameBuild: ''),
-                ShowBuild(nameBuild: ''),
-                ShowBuild(nameBuild: ''),
-                ShowBuild(nameBuild: ''),
-                ShowBuild(nameBuild: ''),
+                BuildCreate(nameBuild: ''),
+                BuildCreate(nameBuild: ''),
+                BuildCreate(nameBuild: ''),
+                BuildCreate(nameBuild: ''),
+                BuildCreate(nameBuild: ''),
+                BuildCreate(nameBuild: ''),
+                BuildCreate(nameBuild: ''),
+                BuildCreate(nameBuild: ''),
                 SizedBox(
                   height: 20,
                 )
