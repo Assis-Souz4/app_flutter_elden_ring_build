@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-AppBar getAppBar() {
+AppBar getAppBar(String nameAppBar) {
+  String name = nameAppBar;
   return AppBar(
-    title: const Text(
-      'Elden Ring Builds',
-      style: TextStyle(
+    title: Text(
+      name,
+      style: const TextStyle(
         fontWeight: FontWeight.bold,
       ),
     ),
