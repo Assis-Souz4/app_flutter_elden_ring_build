@@ -1,4 +1,4 @@
-import 'package:app_flutter_elden_ring_build/screens/showBuildScreen.dart';
+import 'package:app_flutter_elden_ring_build/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,17 +8,18 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Elden Ring Builds',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(backgroundColor: Colors.white),
-        useMaterial3: true,
+        useMaterial3: false,
+        primarySwatch: Colors.blue,brightness: Brightness.dark
+        // primarySwatch: Colors.blue,
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue,),
       ),
-      home: const ShowBuildScreen(),
+      home: const HomePage(),
     );
   }
 }
-///NOTE -
+//NOTE - implementar campos na home de registo e recuperar password
