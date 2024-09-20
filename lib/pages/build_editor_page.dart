@@ -166,7 +166,7 @@ class _BuildEditorState extends State<BuildEditor> {
                         nameBuild = widget.nameController.text;
                       });
                     },
-                    child: Text('data'))
+                    child: Text('data')) 
               ],
             ),
           ],
