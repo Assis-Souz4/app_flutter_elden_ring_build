@@ -1,5 +1,5 @@
 import 'package:app_flutter_elden_ring_build/components/app_bar_decoration.dart';
-import 'package:app_flutter_elden_ring_build/components/botton_navigator_bar.dart';
+import 'package:app_flutter_elden_ring_build/components/bottom_navigator_bar.dart';
 import 'package:app_flutter_elden_ring_build/components/build.dart';
 import 'package:app_flutter_elden_ring_build/components/seach_build.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +31,7 @@ class _ShowBuildsPageState extends State<HomePage> {
           ),
           Expanded(
             child: ListView(
-              children: [
+              children: const [
                 BuildCreate(nameBuild: ''),
                 BuildCreate(nameBuild: ''),
                 BuildCreate(nameBuild: ''),
@@ -48,7 +48,7 @@ class _ShowBuildsPageState extends State<HomePage> {
           )
         ],
       ),
-      bottomNavigationBar: getBottonNavigatorBar(),
+      bottomNavigationBar: getBottomNavigatorBar(),
     );
   }
 }

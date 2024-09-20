@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-BottomNavigationBar getBottonNavigatorBar() {
+BottomNavigationBar getBottomNavigatorBar() {
   return BottomNavigationBar(
     currentIndex: 0,
     items: const [

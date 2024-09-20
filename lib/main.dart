@@ -1,3 +1,4 @@
+import 'package:app_flutter_elden_ring_build/pages/build_editor_page.dart';
 import 'package:app_flutter_elden_ring_build/pages/home_page.dart';
 import 'package:app_flutter_elden_ring_build/pages/login_page.dart';
 import 'package:flutter/material.dart';
@@ -24,8 +25,10 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const LoginPage(),
         '/home': (context) => const HomePage(),
+        '/build editor': (context) => const BuildEditor(),
       },
     );
   }
 }
+
 //NOTE - implementar campos na home de registo e recuperar password

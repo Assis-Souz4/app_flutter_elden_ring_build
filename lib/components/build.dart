@@ -22,7 +22,7 @@ class _CreateBuildState extends State<BuildCreate> {
         Padding(
           padding:
               const EdgeInsets.only(top: 0, left: 20, right: 20, bottom: 10),
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             // color: Colors.grey[350],
             height: 140,
