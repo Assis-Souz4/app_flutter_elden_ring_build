@@ -101,7 +101,7 @@ class _HomePageState extends State<LoginPage> {
                 onPressed: () {
                   Navigator.of(context).pushNamed('/build editor');
                   MaterialPageRoute(
-                    builder: (context) => const BuildEditor(),
+                    builder: (context) => BuildEditor(),
                   );
                 },
                 child: const Text(

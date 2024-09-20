@@ -25,10 +25,11 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const LoginPage(),
         '/home': (context) => const HomePage(),
-        '/build editor': (context) => const BuildEditor(),
+        '/build editor': (context) => BuildEditor(),
       },
     );
   }
 }
 
 //NOTE - implementar campos na home de registo e recuperar password
+//NOTE - implementar a troca de nome na page build editor...dica usar onchanged
